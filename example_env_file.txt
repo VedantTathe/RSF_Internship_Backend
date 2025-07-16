@@ -1,0 +1,2 @@
+MONGO_URI=youmongodburl/DBNAME
+JWT_SECRET=mysecret
