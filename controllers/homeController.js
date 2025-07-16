@@ -1,9 +1,6 @@
-const express = require("express");
-const router = express.Router();
-const authMiddleware = require("../middleware/authMiddleware");
 const User = require("../models/User");
 
-router.get("/", authMiddleware, async (req, res) => {
+exports.getCurrentUserController =  async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select("-password");
     if (!user) {
@@ -14,6 +11,4 @@ router.get("/", authMiddleware, async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: "Server error" });
   }
-});
-
-module.exports = router;
+}
