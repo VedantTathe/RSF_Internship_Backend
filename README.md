@@ -7,14 +7,31 @@ This is the backend server for the **RSF Internship Project**, built with **Node
 ```
 RSF_Internship_Backend/
 │
-├── controllers/ # Route controllers (Auth, Home)
-├── db/ # MongoDB connection
-├── middleware/ # Middleware (e.g., auth verification)
-├── models/ # Mongoose schemas/models
-├── routes/ # Route definitions
-├── .env # Environment variables
-├── server.js # Entry point of the application
-└── README.md # Project documentation
+├── controllers/
+│   ├── authController.js
+│   └── homeController.js
+│
+├── db/
+│   └── connectDB.js
+│
+├── middleware/
+│   └── authMiddleware.js
+│
+├── models/
+│   └── User.js
+│
+├── routes/
+│   ├── authRoutes.js
+│   └── homeRoutes.js
+│
+├── .env
+├── .gitignore
+├── example_env_file.txt
+├── package.json
+├── package-lock.json
+├── server.js
+└── README.md  ✅
+
 ```
 
 ---
@@ -47,7 +64,7 @@ npm start
 ```
 The server will start on http://localhost:5000 (or your specified port).
 
-###API Endpoints:
+### API Endpoints:
 ```
 -Auth Routes (/auth)
 POST /auth/register – Register a new user
