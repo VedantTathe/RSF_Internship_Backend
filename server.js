@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/auth", authRoutes);
-app.use("/protected", protectedRoutes);
+app.use("/home", protectedRoutes);
 
 const PORT = process.env.PORT || 5000;
 
