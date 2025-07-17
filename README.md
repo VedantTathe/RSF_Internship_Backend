@@ -41,7 +41,7 @@ RSF_Internship_Backend/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/RSF_Internship_Backend.git
+git clone https://github.com/VedantTathe/RSF_Internship_Backend.git
 cd RSF_Internship_Backend
 ```
 
